@@ -102,21 +102,11 @@ function iniciar(){
 
     while(ini != 0){
         ini = prompt("Seleccione una opcion: ");
-        switch(ini){
-            case 1:
-                agregar();
-            case 2:
-                modificarStock();
-            case 3:
-                regVenta();
-            case 4:
-                promV();
-            case 5:
-                ceroStock();
-            case 0:
-                break;
-            default:
-                console.log("Hasta luego ;)")
-        }
+        if(ini == 1) agregar();
+        if(ini == 2) modificarStock();
+        if(ini == 3) regVenta();
+        if(ini == 4) promV();
+        if(ini == 5) ceroStock();
+        if(ini == 0) break;
     }
 }
