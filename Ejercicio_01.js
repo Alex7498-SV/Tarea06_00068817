@@ -89,3 +89,34 @@ function ceroStock(){
         }
     }
 }
+
+function iniciar(){
+    let ini = 9;
+
+    console.log("1-Agregar.");
+    console.log("2-Modificar el stock.");
+    console.log("3-Registrar venta");
+    console.log("4-Promedio de venta.");
+    console.log("5-Mostrar cero stock");
+    console.log("0-salir");
+
+    while(ini != 0){
+        ini = prompt("Seleccione una opcion: ");
+        switch(ini){
+            case 1:
+                agregar();
+            case 2:
+                modificarStock();
+            case 3:
+                regVenta();
+            case 4:
+                promV();
+            case 5:
+                ceroStock();
+            case 0:
+                break;
+            default:
+                console.log("Hasta luego ;)")
+        }
+    }
+}
